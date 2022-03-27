@@ -1,0 +1,119 @@
+.wrapper__table {
+  position: absolute;
+  z-index: 5;
+  top: 5px;
+  left: 5px;
+  background-color: white;
+  width: 300px;
+  min-height: 98%;
+  min-width: 90px;
+  max-width: 500px;
+  resize: horizontal;
+  overflow: auto;
+  border-radius: 10px;
+
+  .table__collapse {
+    margin: 5px;
+    cursor: pointer;
+
+    span:nth-child(2) {
+      display: none;
+    }
+
+  }
+
+
+  .table__content {
+    margin: 5px;
+
+    table {
+
+
+
+      thead {
+
+        th{
+          border-left: 1px solid lightgrey;
+        }
+        th:nth-child(3){
+          border-right: 1px solid lightgrey;
+        }
+      }
+
+      tbody{
+       .active{
+         background-color: lightgray;
+       }
+
+        th {
+          border-top: 1px solid lightgrey;
+          border-bottom: 1px solid lightgrey;
+          cursor: pointer;
+        }
+
+
+        th:nth-child(2){
+          border-left: 1px solid lightgray;
+          border-right: 1px solid lightgray;
+        }
+      }
+    }
+  }
+
+  .table__none_content {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+
+    h3 {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.wrapper__table_collapse {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width: 50px;
+  max-height: 50px;
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  background-color: white;
+  border-radius: 5px;
+
+  .table__collapse {
+
+
+    span:nth-child(1) {
+      display: none;
+    }
+    span:nth-child(2) {
+      cursor: pointer;
+      position: relative;
+      left: 15px;
+      top: 15px
+    }
+    span:nth-child(3) {
+      display: none;
+    }
+    span:nth-child(4) {
+      display: none;
+    }
+
+  }
+
+  .table__none_content {
+    display: none;
+  }
+
+  .table__content {
+    display: none;
+  }
+}
