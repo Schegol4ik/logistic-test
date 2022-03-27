@@ -104,6 +104,7 @@ const App = () => {
                         title: findUpLoad.title
                     }
                 }
+                console.log(reApplication)
                 dispatch(editingApplicationAction(reApplication))
                 setLoadingProduct('')
                 setUpLoadingProduct('')
@@ -113,7 +114,6 @@ const App = () => {
             }
         }
     }//Изменяем заявку
-
 
     useEffect(() => {
         if (selectApplication) {
@@ -132,7 +132,7 @@ const App = () => {
         return setStart(null) && setEnd(null)
 
 
-    }, [selectApplication, state])//Меняем маршрут
+    }, [selectApplication,state])//Меняем маршрут
 
     useEffect(() => {
         if (selectApplication) {

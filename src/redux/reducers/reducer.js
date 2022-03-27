@@ -44,7 +44,7 @@ export const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 applications: state.applications.map(item => {
-                    if(item.id === action.payload.id){
+                    if(item.numberApplication === action.payload.numberApplication){
                         item.loading = action.payload.loading
                         item.upLoading = action.payload.upLoading
                     }
